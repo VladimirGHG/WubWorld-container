@@ -1,0 +1,18 @@
+.paragraph-flick{
+    font-family: Verdana, Geneva, sans-serif;
+    color: aliceblue;
+    font-size: 24px;
+    text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff;
+    animation: flicker 10.5s infinite;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 1px #ffffff, 0 0 1px #fffae2, 0 0 5px #ffefcd;
+    }
+    20%, 24%, 55% {
+      opacity: 0.1;
+      text-shadow: none;
+    }
+}

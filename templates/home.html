@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/images.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/texts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/authentication.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WubWorld</title>
+</head>
+<body style="background-image: url('{{ url_for('static', filename=image_path) }}'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; margin: 0;">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <p class="paragraph-flick">WubWorld</p>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
